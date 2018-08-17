@@ -20,10 +20,12 @@
   "dependencies": {
     "@types/react": "^16.4.11",
     "@types/react-dom": "^16.0.7",
+    "draft-js": "^0.10.5",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "@types/draft-js": "^0.10.24",
     "awesome-typescript-loader": "^5.2.0",
     "source-map-loader": "^0.2.4",
     "typescript": "^2.0.0",
