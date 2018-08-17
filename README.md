@@ -1,5 +1,5 @@
 # duck-editor
-Extensible editor built on Draft.js
+Extensible WYSIWYG editor built on Draft.js
 
 
 ## TODO
