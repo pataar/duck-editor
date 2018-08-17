@@ -13,9 +13,9 @@ class InlineStyling extends React.Component<DuckPluginProps, {}> {
 		this.hasStyle = this.hasStyle.bind(this);
 
 		this.markupTypes = {
-			BOLD: 'B',
-			ITALIC: 'I',
-			UNDERLINE: 'U'
+			BOLD: <strong>B</strong>,
+			ITALIC: <em>I</em>,
+			UNDERLINE: <ins>U</ins>
 		}
 	}
 

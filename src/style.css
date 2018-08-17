@@ -13,17 +13,31 @@
 .duck-toolbar {
 	display:flex;
 	direction: row;
+	background: #e2e7e9;
+	border: 1px solid #ddd;
 }
 .duck-toolbar-button {
 	padding: 5px;
 	border: 1px solid #ddd;
+	margin: -1px 0 -1px -1px;
 	display: flex;
-	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.duck-toolbar-divider {
+
+	padding: 0 10px;
+	color: #ddd;
+	display: flex;
 	height: 20px;
 	justify-content: center;
 	align-items: center;
 }
 
 .duck-toolbar-button-active {
-	background: red;
+	background: #dbe1e4;
+	box-shadow: inset 0px 0px 2px #999;
 }

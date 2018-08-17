@@ -9,7 +9,7 @@ let DuckEditor = (
 	<Duck
 		value={"<p>Hey this <strong>editor</strong> rocks 😀</p>"}
 		options={{
-			toolbar: ['inline', 'link']
+			toolbar: ['inline', 'divider', 'link','divider', ]
 		}}
 	/>
 );

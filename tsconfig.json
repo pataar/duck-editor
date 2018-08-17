@@ -6,7 +6,8 @@
         "module": "commonjs",
         "target": "es5",
 		"jsx": "react",
-		"allowSyntheticDefaultImports": false
+		"allowSyntheticDefaultImports": false,
+		"declaration": true
     },
     "include": [
         "./src/**/*", "webpack.config.js"

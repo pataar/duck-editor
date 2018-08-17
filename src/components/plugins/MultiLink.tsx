@@ -4,7 +4,6 @@ import { RichUtils } from "draft-js";
 import DuckToolbarButton from "../toolbar/DuckToolbarButton";
 
 class MultiLink extends React.Component<DuckPluginProps, {}> {
-
 	constructor(props: any) {
 		super(props);
 
@@ -16,10 +15,11 @@ class MultiLink extends React.Component<DuckPluginProps, {}> {
 	}
 
 	render() {
-		return <DuckToolbarButton active={false} onClick={() => this.openLinkModal()}>
-			URL
-				</DuckToolbarButton>
-
+		return (
+			<DuckToolbarButton active={false} onClick={() => this.openLinkModal()}>
+				URL
+			</DuckToolbarButton>
+		);
 	}
 }
 

@@ -2,11 +2,13 @@ import * as React from "react";
 import DuckContext from "../DuckContext";
 import InlineStyling from "../plugins/InlineStyling";
 import MultiLink from "../plugins/MultiLink";
+import Divider from "../plugins/Divider";
 
 export default class Toolbar extends React.Component {
 
 	defaultPlugins: object = {
 		'inline': InlineStyling,
+		'divider': Divider,
 		'link': MultiLink
 	};
 
