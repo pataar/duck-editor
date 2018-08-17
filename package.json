@@ -1,0 +1,33 @@
+{
+  "name": "duck-editor",
+  "version": "0.0.1",
+  "description": "An extensible WYSIWYG editor built on Draft.js",
+  "main": "dist/duck.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pataar/duck-editor.git"
+  },
+  "author": "pataar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pataar/duck-editor/issues"
+  },
+  "homepage": "https://github.com/pataar/duck-editor#readme",
+  "dependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.0",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^2.0.0",
+    "webpack": "^4.16.5",
+    "webpack-command": "^0.4.1"
+  }
+}
