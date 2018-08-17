@@ -1,0 +1,29 @@
+.duck-editor {
+	background:white;
+	min-height: 200px;
+	width: 400px;
+	color: #333;
+}
+
+.duck-editor .DraftEditor-root {
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+}
+.duck-toolbar {
+	display:flex;
+	direction: row;
+}
+.duck-toolbar-button {
+	padding: 5px;
+	border: 1px solid #ddd;
+	display: flex;
+	width: 20px;
+	height: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.duck-toolbar-button-active {
+	background: red;
+}

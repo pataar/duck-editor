@@ -3,7 +3,17 @@ import * as ReactDOM from "react-dom";
 
 import { Duck } from "./components/Duck";
 
-ReactDOM.render(
-    <Duck name="duck editor" />,
-    document.getElementById("example")
+import './style.css';
+
+let DuckEditor = (
+	<Duck
+		value={"<p>Hey this <strong>editor</strong> rocks 😀</p>"}
+		options={{
+			toolbar: ['inline', 'link']
+		}}
+	/>
+);
+
+ReactDOM.render(DuckEditor,
+	document.getElementById("example")
 );
