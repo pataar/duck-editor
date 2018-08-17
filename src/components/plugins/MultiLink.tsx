@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DuckPluginProps } from "./IDuckPluginProps";
+import { DuckPluginProps } from "./DuckPluginProps";
 import { RichUtils } from "draft-js";
 import DuckToolbarButton from "../toolbar/DuckToolbarButton";
 

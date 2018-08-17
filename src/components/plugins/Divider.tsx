@@ -1,5 +1,5 @@
 import * as React from "react";
-import { DuckPluginProps } from "./IDuckPluginProps";
+import { DuckPluginProps } from "./DuckPluginProps";
 
 class Divider extends React.Component<DuckPluginProps, {}> {
 	constructor(props: any) {

@@ -6,10 +6,10 @@ import Divider from "../plugins/Divider";
 
 export default class Toolbar extends React.Component {
 
-	defaultPlugins: object = {
+	defaultPlugins: any = {
 		'inline': InlineStyling,
 		'divider': Divider,
-		'link': MultiLink
+		'link': MultiLink,
 	};
 
 	render() {
@@ -21,7 +21,12 @@ export default class Toolbar extends React.Component {
 				{({ options, onEditorStateChange, editorState }) => (
 					<div className="duck-toolbar">
 						{options.toolbar.map((key) => {
-							let Plugin = plugins[key];
+
+							let Plugin = ({
+								...this.defaultPlugins,
+								...options.customPlugins
+							})[key];
+
 							return (
 								<Plugin
 									key={key}
