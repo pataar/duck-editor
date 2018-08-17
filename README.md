@@ -1,4 +1,4 @@
-# duck-editor
+# WIP: duck-editor
 Extensible WYSIWYG editor built on Draft.js
 
 
