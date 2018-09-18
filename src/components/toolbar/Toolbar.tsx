@@ -1,36 +1,32 @@
 import * as React from "react";
-import DuckContext from "../DuckContext";
-import InlineStyling from "../plugins/InlineStyling";
-import MultiLink from "../plugins/MultiLink";
-import Divider from "../plugins/Divider";
+import DuckContext from "../../definitions/DuckContext";
+import InlineStyling from "./plugins/InlineStyling";
+import MultiLink from "./plugins/MultiLink";
+import Divider from "./plugins/Divider";
+
+const duckToolbarOptions: any = {
+	'inline': InlineStyling,
+	'link': MultiLink,
+	'divider': Divider
+};
 
 export default class Toolbar extends React.Component {
 
-	defaultPlugins: any = {
-		'inline': InlineStyling,
-		'divider': Divider,
-		'link': MultiLink,
-	};
-
 	render() {
-
-		const plugins: any = this.defaultPlugins;
 
 		return (
 			<DuckContext.Consumer>
-				{({ options, onEditorStateChange, editorState }) => (
+				{({ toolbar, onEditorStateChange, editorState }) => (
 					<div className="duck-toolbar">
-						{options.toolbar.map((key) => {
+						{toolbar.map((ToolbarOption: any, index: number) => {
 
-							let Plugin = ({
-								...this.defaultPlugins,
-								...options.customPlugins
-							})[key];
+							if(typeof ToolbarOption === "string"){
+								ToolbarOption = duckToolbarOptions[ToolbarOption]
+							}
 
 							return (
-								<Plugin
-									key={key}
-									options={options}
+								<ToolbarOption
+									key={index}
 									onChange={onEditorStateChange}
 									editorState={editorState} />
 							)
