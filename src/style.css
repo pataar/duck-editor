@@ -1,5 +1,5 @@
 .duck-editor {
-	background:white;
+	background: white;
 	width: 400px;
 	color: #333;
 }
@@ -10,12 +10,13 @@
 	padding: 10px;
 	min-height: 200px;
 }
-.DraftEditor-editorContainer, .DraftEditor-editorContainer div {
+.DraftEditor-editorContainer,
+.DraftEditor-editorContainer div {
 	height: 100%;
 }
 
 .duck-toolbar {
-	display:flex;
+	display: flex;
 	direction: row;
 	background: #e2e7e9;
 	border: 1px solid #ddd;
@@ -32,7 +33,6 @@
 }
 
 .duck-toolbar-divider {
-
 	padding: 0 10px;
 	color: #ddd;
 	display: flex;

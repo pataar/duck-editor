@@ -1,16 +1,14 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"sourceMap": true,
+		"noImplicitAny": true,
 		"module": "commonjs",
 		"lib": ["es5", "es6", "dom"],
-        "target": "es5",
+		"target": "es5",
 		"jsx": "react",
 		"allowSyntheticDefaultImports": false,
 		"declaration": true
-    },
-    "include": [
-        "./src/**/*", "webpack.config.js"
-    ]
+	},
+	"include": ["./src/**/*", "webpack.config.js"]
 }

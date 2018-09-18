@@ -1,44 +1,44 @@
 {
-  "name": "duck-editor",
-  "version": "0.0.1",
-  "description": "An extensible WYSIWYG editor built on Draft.js",
-  "main": "dist/duck.js",
-  "scripts": {
-    "build": "webpack",
-    "production": "webpack --mode production",
-    "watch": "webpack -w",
-    "develop": "webpack-serve ./webpack.config.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pataar/duck-editor.git"
-  },
-  "author": "pataar",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pataar/duck-editor/issues"
-  },
-  "homepage": "https://github.com/pataar/duck-editor#readme",
-  "dependencies": {
-    "@types/react": "^16.4.11",
-    "@types/react-dom": "^16.0.7",
-    "draft-js": "^0.10.5",
-    "draft-js-export-html": "^1.2.0",
-    "draft-js-import-html": "^1.2.1",
-    "immutable": "^3.8.2",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
-  },
-  "devDependencies": {
-    "@types/draft-js": "^0.10.24",
-    "awesome-typescript-loader": "^5.2.0",
-    "css-loader": "^1.0.0",
-    "prettier": "^1.14.2",
-    "source-map-loader": "^0.2.4",
-    "style-loader": "^0.22.1",
-    "typescript": "^2.0.0",
-    "webpack": "^4.16.5",
-    "webpack-command": "^0.4.1",
-    "webpack-serve": "^2.0.2"
-  }
+	"name": "duck-editor",
+	"version": "0.0.1",
+	"description": "An extensible WYSIWYG editor built on Draft.js",
+	"main": "dist/duck.js",
+	"scripts": {
+		"build": "webpack",
+		"production": "webpack --mode production",
+		"watch": "webpack -w",
+		"develop": "webpack-serve ./webpack.config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pataar/duck-editor.git"
+	},
+	"author": "pataar",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pataar/duck-editor/issues"
+	},
+	"homepage": "https://github.com/pataar/duck-editor#readme",
+	"dependencies": {
+		"@types/react": "^16.4.11",
+		"@types/react-dom": "^16.0.7",
+		"draft-js": "^0.10.5",
+		"draft-js-export-html": "^1.2.0",
+		"draft-js-import-html": "^1.2.1",
+		"immutable": "^3.8.2",
+		"react": "^16.4.2",
+		"react-dom": "^16.4.2"
+	},
+	"devDependencies": {
+		"@types/draft-js": "^0.10.24",
+		"awesome-typescript-loader": "^5.2.0",
+		"css-loader": "^1.0.0",
+		"prettier": "^1.14.2",
+		"source-map-loader": "^0.2.4",
+		"style-loader": "^0.22.1",
+		"typescript": "^2.0.0",
+		"webpack": "^4.16.5",
+		"webpack-command": "^0.4.1",
+		"webpack-serve": "^2.0.2"
+	}
 }

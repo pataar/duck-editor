@@ -2,11 +2,10 @@ import * as React from "react";
 
 interface DuckToolbarButtonProps {
 	onClick: (active: boolean) => void;
-	active: boolean
+	active: boolean;
 }
 
 export default class DuckToolbarButton extends React.Component<DuckToolbarButtonProps> {
-
 	constructor(props: any) {
 		super(props);
 
@@ -28,7 +27,7 @@ export default class DuckToolbarButton extends React.Component<DuckToolbarButton
 		}
 
 		return (
-			<a style={{cursor: 'pointer'}} className={className} onMouseDown={this.handleClick}>
+			<a style={{ cursor: "pointer" }} className={className} onMouseDown={this.handleClick}>
 				{this.props.children}
 			</a>
 		);

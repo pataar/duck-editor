@@ -3,27 +3,23 @@ import * as ReactDOM from "react-dom";
 
 import { Duck } from "../src/components/Duck";
 import CleanPaste from "../src/plugins/CleanPaste";
-import '../src/style.css';
-import './example.css';
-
+import "../src/style.css";
+import "./example.css";
 
 class TestEditor extends React.Component {
-
 	state: {
-		content: string
-	}
+		content: string;
+	};
 
 	constructor(props: any) {
 		super(props);
 
 		this.state = {
-			content: "<p>Hey this <strong>editor</strong> rocks 😀</p>"
-		}
+			content: "<p>Hey this <strong>editor</strong> rocks 😀</p>",
+		};
 	}
 
 	render() {
-
-
 		return (
 			<div className="wrapper">
 				<div>
@@ -31,7 +27,7 @@ class TestEditor extends React.Component {
 					<Duck
 						value={this.state.content}
 						onChange={(content: string) => this.setState({ content })}
-						toolbar={['inline', 'divider', 'link', 'divider',]}
+						toolbar={["inline", "divider", "link", "divider"]}
 						plugins={[CleanPaste]}
 					/>
 				</div>
@@ -39,15 +35,11 @@ class TestEditor extends React.Component {
 				<br />
 				<div>
 					<h1>This is the HTML version 2</h1>
-					<code>
-						{this.state.content}
-					</code>
+					<code>{this.state.content}</code>
 				</div>
 			</div>
 		);
 	}
 }
 
-ReactDOM.render(<TestEditor />,
-	document.getElementById("example")
-);
+ReactDOM.render(<TestEditor />, document.getElementById("example"));

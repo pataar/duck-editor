@@ -4,7 +4,6 @@ import { RichUtils } from "draft-js";
 import DuckToolbarButton from "../../../definitions/DuckToolbarButton";
 
 class InlineStyling extends React.Component<DuckToolbarPluginProps, {}> {
-
 	markupTypes: any;
 
 	constructor(props: any) {
@@ -15,26 +14,30 @@ class InlineStyling extends React.Component<DuckToolbarPluginProps, {}> {
 		this.markupTypes = {
 			BOLD: <strong>B</strong>,
 			ITALIC: <em>I</em>,
-			UNDERLINE: <ins>U</ins>
-		}
+			UNDERLINE: <ins>U</ins>,
+		};
 	}
 
 	toggle(type: string) {
 		this.props.onChange(RichUtils.toggleInlineStyle(this.props.editorState, type));
 	}
 
-	hasStyle(type: string){
+	hasStyle(type: string) {
 		return this.props.editorState.getCurrentInlineStyle().has(type);
 	}
 
 	render() {
-		return <>
-			{Object.keys(this.markupTypes).map(key => {
-				return <DuckToolbarButton key={key} active={this.hasStyle(key)} onClick={() => this.toggle(key)}>
-					{this.markupTypes[key]}
-				</DuckToolbarButton>
-			})}
-		</>
+		return (
+			<>
+				{Object.keys(this.markupTypes).map(key => {
+					return (
+						<DuckToolbarButton key={key} active={this.hasStyle(key)} onClick={() => this.toggle(key)}>
+							{this.markupTypes[key]}
+						</DuckToolbarButton>
+					);
+				})}
+			</>
+		);
 	}
 }
 

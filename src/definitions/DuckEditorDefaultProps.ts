@@ -1,10 +1,9 @@
-import DuckProps from './DuckProps';
-
+import DuckProps from "./DuckProps";
 
 let DuckEditorDefaultProps: DuckProps = {
-	toolbar: ['link', 'inline'],
+	toolbar: ["link", "inline"],
 	plugins: [],
-	language: 'en'
+	language: "en",
 };
 
 export default DuckEditorDefaultProps;

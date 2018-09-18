@@ -10,21 +10,18 @@ class MultiLink extends React.Component<DuckToolbarPluginProps, {}> {
 		this.openLinkModal = this.openLinkModal.bind(this);
 
 		this.state = {
-			modal_open: false
+			modal_open: false,
 		};
 	}
 
-	openLinkModal() {
-
-	}
+	openLinkModal() {}
 
 	renderModal() {
-
 		const modalStyle = {
-			display: 'block'
+			display: "block",
 		};
 
-		return <div style={ modalStyle }>Url</div>
+		return <div style={modalStyle}>Url</div>;
 	}
 
 	render() {

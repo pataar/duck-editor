@@ -7,9 +7,7 @@ class Divider extends React.Component<DuckToolbarPluginProps, {}> {
 	}
 
 	render() {
-		return (
-			<div className="duck-toolbar-divider" />
-		);
+		return <div className="duck-toolbar-divider" />;
 	}
 }
 
